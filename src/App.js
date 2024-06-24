@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Maps from './Components/Maps';
 
-function App() {
+export default function App() {
+  
+  let userName = "Muhammad"
+  let age = 34;
+  let obj = {
+    color: "red",
+    price: 600_000,
+    devName: "React"
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <h3>lorem2</h3>
+      <p>lorem</p>
+      <button>Click me</button>
+      <Maps name={userName} age={age} card={obj}/>    
+    </>
+  )
 }
-
-export default App;
